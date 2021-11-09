@@ -1,9 +1,8 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#comment-name').value.trim();
-   // const needed_funding = document.querySelector('#project-funding').value.trim();
-    const description = document.querySelector('#comment-desc').value.trim();
+
+    const description = document.querySelector('#comment').value.trim();
   
     if (name && description) {
       const response = await fetch(`/api/comments`, {

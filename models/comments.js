@@ -43,4 +43,5 @@ Comments.init(
   }
 );
 
-module.exports = Comments;
+// exports the module comments
+module.exports = Comments
